@@ -1,2 +1,2 @@
-#PoweredRails Website
-This is a testing site for the main site.
+#Stream
+The Stream website, as used with permission from Jamen Marz (the guy that created the PR website).
