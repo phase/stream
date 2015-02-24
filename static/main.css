@@ -36,9 +36,9 @@ html, body {margin:0; padding:0; font-family:"Open Sans"; font-weight:100; backg
 #slideshow-slider {position:absolute;height:100%;top:0;left:0;z-index:0;transition:all 750ms;-o-transition:all 750ms;-ms-transition:all 750ms;-moz-transition:all 750ms;-webkit-transition:all 750ms;}
 #slideshow-control {position:absolute;width:30px;top:50%;right:0;background-color:rgba(0,0,0,0.9); border-top-left-radius:10px; border-bottom-left-radius:10px;}
 .slideshow-pip {width:20px;height:20px;margin:5px;border-radius:20px;display:inline-block;background-color:#FFF;transition:all 400ms; -o-transition:all 400ms; -ms-transition:all 400ms; -moz-transition:all 400ms; -webkit-transition:all 400ms;}
-.slideshow-pip[data-active=true] {background-color:#E06666;}
+.slideshow-pip[data-active=true] {background-color:#BFECEB;}
 .slide {display:inline-block;float:left;height:500px;}
-.slide h1 {margin-left: 100px;margin-right: 100px;margin-top: 20px;text-align: center;font-size:36px;}
+.slide h1 {margin-left: 100px;margin-right: 100px;margin-top: 20px;text-align: center;font-size:36px;max-height: 150px;}
 .box {width:100%;height:608px;padding-top:20px;background-color:rgba(0,0,0,0.4);color:#FFF;position:relative;}
 .box p {margin-left: 100px;margin-right: 100px;margin-top: 100px;text-align: center;font-size:26px;}
 .box button {position:absolute; bottom:200px; font-size:30px; font-weight:100;left:50%;margin-left:-225px;width:450px;}
