@@ -1,11 +1,23 @@
 <html>
   <head>
-  	<title>Stream | Minecraft Plugins</title>
+    <title>Stream | Minecraft Plugins</title>
     <meta content="text/html; charset=urf8">
     <meta name="viewport" content="user-scalable=no">
     <link href="static/main.css" type="text/css" rel="stylesheet">
     <script src="static/js/main_rails.js" type="text/javascript"></script>
-      <link href="static/images/logo.png" rel="shortcut icon" type="image/png">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <link href="static/images/logo.png" rel="shortcut icon" type="image/png">
+    <script>
+$("#form").on("submit", function(){
+  $.ajax(
+    type: "POST"
+    url: "https://docs.google.com/forms/d/FORM-ID/formResponse"
+    data: {
+      'entry.1': $("#input").val()
+    }
+  );
+});
+    </script>
   </head>
   
   <body>
@@ -18,7 +30,7 @@
 	
     <div id="body">
       <div class="body-content">
-        <form>
+        <form id="form">
           Name:<br>
           <input type="text" id="name" placeholder="Phase"><br>
           Skype:<br>
