@@ -1,4 +1,5 @@
-$("#form").on("submit", function(){
+$("#form").submit(function(event){
+  event.preventDefault();
   $.ajax(
     type: "POST"
     url: "https://docs.google.com/forms/d/1M6W7IdCbIgEGn8xQ3ROfiklOG0J6B105NbgPB89qvl4/formResponse"
