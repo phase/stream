@@ -12,6 +12,10 @@ body {
   background-color: #ffb400;
 }
 
+hr {
+  border-color: #444444;
+}
+
 canvas {
   position:absolute;
   top:0;
