@@ -9,4 +9,5 @@ $("#form").on("submit", function(){
       'entry.2': $("#plugin-description").val()
     }
   );
+  alert("Your request has been submitted!");
 });
