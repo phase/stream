@@ -1,4 +1,5 @@
 $("#form").submit(function(event){
+  alert("Your request has been submitted!");
   event.preventDefault();
   $.ajax(
     type: "POST"
@@ -10,5 +11,4 @@ $("#form").submit(function(event){
       'entry.2': $("#plugin-description").val()
     }
   );
-  alert("Your request has been submitted!");
 });
