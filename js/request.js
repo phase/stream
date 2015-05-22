@@ -3,7 +3,10 @@ $("#form").on("submit", function(){
     type: "POST"
     url: "https://docs.google.com/forms/d/FORM-ID/formResponse"
     data: {
-      'entry.1': $("#input").val()
+      'entry.name': $("#name").val()
+      'entry.skype': $("#skype").val()
+      'entry.plugin': $("#plugin-name").val()
+      'entry.description': $("#plugin-description").val()
     }
   );
 });
