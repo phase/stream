@@ -1,3 +1,4 @@
+$("#confirm").hide();
 $("#form").submit(function(event) {
     event.preventDefault();
     $.post("https://docs.google.com/forms/d/1M6W7IdCbIgEGn8xQ3ROfiklOG0J6B105NbgPB89qvl4/formResponse", {
@@ -7,5 +8,10 @@ $("#form").submit(function(event) {
         'entry.392196055': $("#plugin-description").val()
     }).always(function() {
         alert("Your request has been submitted!");
+        $("#confirm").show().fadeOut(1200);
+        $("#name").val("");
+        $("#skype").val("");
+        $("#plugin-name").val("");
+        $("#plugin-description").val("");
     });
 });
