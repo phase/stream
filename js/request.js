@@ -5,7 +5,7 @@ $("#form").submit(function(event) {
         'entry.1646269383': $("#skype").val(),
         'entry.1775568240': $("#plugin-name").val(),
         'entry.392196055': $("#plugin-description").val()
-    }).done(function() {
+    }).always(function() {
         alert("Your request has been submitted!");
     });
 });
