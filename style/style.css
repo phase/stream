@@ -28,3 +28,7 @@ canvas {
 a, a:link, a:visited, a:hover, a:active {
   color: #87E8E2;
 }
+
+blockquote {
+  border-left: 5px solid #F09D15;
+}
